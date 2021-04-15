@@ -10,8 +10,12 @@ Just wraps up mp4fpsmod into a Dockerfile to work around some issues I had getti
 Usage
 -----
 
-::
+Build the container::
+    
     docker build -t mp4fpsmod .
+    
+Run the container to run the application::
+    
     docker run -v /path/to/video/dir:/mnt mp4fpsmod <args to mp4fpsmod binary> /mnt/name_of_input_file.mp4 -o /mnt/name_of_output_file.mp4
 
 
