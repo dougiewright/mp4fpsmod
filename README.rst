@@ -2,6 +2,19 @@
 mp4fpsmod
 =========
 
+What is this fork?
+------------------
+
+Just wraps up mp4fpsmod into a Dockerfile to work around some issues I had getting it to build.
+
+Usage
+-----
+
+::
+    docker build -t mp4fpsmod .
+    docker run -v /path/to/video/dir:/mnt mp4fpsmod <args to mp4fpsmod binary> /mnt/name_of_input_file.mp4 -o /mnt/name_of_output_file.mp4
+
+
 What is this?
 -------------
 Tiny mp4 time code editor.

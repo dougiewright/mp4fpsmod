@@ -4,4 +4,5 @@ COPY . /build
 WORKDIR /build
 RUN ./bootstrap.sh
 RUN ./configure && make && strip mp4fpsmod
-RUN ./mp4fpsmod
+RUN make install
+ENTRYPOINT ["mp4fpsmod"]
